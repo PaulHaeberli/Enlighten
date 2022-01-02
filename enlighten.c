@@ -116,10 +116,12 @@ canvas *canvas_resize(canvas *in, int sizex, int sizey)
     return out;
 }
 
-canvas *canvas_blur(canvas *in, float imgdiameter) 
+canvas *canvas_blur(canvas *in, float smalldiam) 
 {
-    int smallsizex = round(imgdiameter*in->sizex);
-    int smallsizey = round(imgdiameter*in->sizey);
+    float indiam = canvas_diameter(in);
+    float scaledown = smalldiam/indiam;
+    int smallsizex = round(scaledown*in->sizex);
+    int smallsizey = round(scaledown*in->sizey);
     canvas *small = canvas_resize(in, smallsizex, smallsizey); 
     canvas *big = canvas_resize(small, in->sizex, in->sizey);
     canvas_free(small);
@@ -130,6 +132,10 @@ canvas *canvas_frompng(const char *filename)
 {
     int sizex, sizey, n;
     unsigned char *data = stbi_load(filename, &sizex, &sizey, &n, 0);
+    if(!data) {
+        fprintf(stderr, "canvas_frompng: error: problem reading %s\n", filename);
+        exit(1);
+    }
     canvas *pic = canvas_new(sizex, sizey);
     free(pic->data);
     pic->data = (unsigned int *)data;
@@ -147,11 +153,11 @@ canvas *canvas_enlighten(canvas *in, float param)
     canvas *maxrgb = canvas_maxrgb(in);
 
     // blur this image. can do more or less
-    canvas *maxrgbblur = canvas_blur(maxrgb, 0.1);
+    canvas *maxrgbblur = canvas_blur(maxrgb, 20.0);
     canvas_free(maxrgb);
 
     // divide the input image by maxrgbblur to brighten the image
-    // param is in the range 0.0 .. 1.0 and controlled by a slider.
+    // param is in the range 0.0 .. 1.0 and normally controlled by a slider.
     canvas *ret = canvas_brighten(in, maxrgbblur, param);
     canvas_free(maxrgbblur);
     return ret;
