@@ -11,7 +11,7 @@ To test it
 
 % make test
 
-This image processing method is related to Homomorphic Image Processing
+This image processing method is related to Homomorphic Image Processing but avoids the use of fft, etc.
 
 
 [wikipedia link](https://en.wikipedia.org/wiki/Homomorphic_filtering#Image_enhancement)
