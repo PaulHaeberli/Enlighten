@@ -3,7 +3,7 @@ Automatically brighten dark areas in high dynamic range images
 
 This code shows how to automatically brighten the darker areas of high dynamic range images.
 
-To compile (only tested on macOS), just type 
+To compile (only tested on macOS) just type 
 
 % make
 
