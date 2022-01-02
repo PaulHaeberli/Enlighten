@@ -1,5 +1,5 @@
 # Enlighten
-Automatically fix high dynamic range images
+Automatically brighten dark areas in high dynamic range images
 
 This code shows how to automatically brighten the darker areas of high dynamic range images.
 
@@ -17,7 +17,7 @@ This image processing method is related to Homomorphic Image Processing but avoi
 
 [faadooengineers link](http://www.faadooengineers.com/online-study/post/ece/digital-image-processing/1123/homomorphic-filtering)
 
-This is used in my photo painting app for iOS called "PhotoViva"
+This method is used in my photo painting app for iOS called "PhotoViva"
 
 Uses https://github.com/nothings/stb to read, write and resize images.
 
