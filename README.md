@@ -19,9 +19,9 @@ This image processing method is related to Homomorphic Image Processing but avoi
 
 This method is used in my photo painting app for iOS called "PhotoViva"
 
-Uses https://github.com/nothings/stb to read, write and resize images.
-
 The image blurring is implemented by resizing an image to a small size and then resizing it big again.
 
 Enlighten sees the world like your eyes see the world.
+
+Creditis: Uses https://github.com/nothings/stb to read, write and resize images.
 
