@@ -148,11 +148,11 @@ canvas *canvas_enlighten(canvas *in, float param)
     canvas *maxrgb = canvas_maxrgb(in);
 
     // blur this image. can do more or less
-    canvas *maxrgbblur = canvas_blur(maxrgb, 0.1);
+    canvas *maxrgbblur = canvas_blur(maxrgb, 0.1);      // should free maxrgb
 
     // divide the input image by maxrgbblur to brighten the image
     // param is in the range 0.0 .. 1.0 and controlled by a slider.
-    return canvas_brighten(in, maxrgbblur, param);
+    return canvas_brighten(in, maxrgbblur, param);      // should free maxrgbblur before returning
 }
 
 int main(int argc, char **argv) 
