@@ -1,4 +1,4 @@
-# Enlighte
+# Enlighten
 Automatically fix high dynamic range images
 
 This code shows how to automatically brighten the darker areas of high dynamic range images.
@@ -13,9 +13,10 @@ To test it
 
 This image processing method is related to Homomorphic Image Processing
 
-    https://en.wikipedia.org/wiki/Homomorphic_filtering#Image_enhancement
+[Duck Duck Go](https://duckduckgo.com)
+    [wikipedia link] (https://en.wikipedia.org/wiki/Homomorphic_filtering#Image_enhancement)
 
-    http://www.faadooengineers.com/online-study/post/ece/digital-image-processing/1123/homomorphic-filtering
+    [faadooengineers link] (http://www.faadooengineers.com/online-study/post/ece/digital-image-processing/1123/homomorphic-filtering)
 
 This is used in my photo painting app for iOS called "PhotoViva"
 
