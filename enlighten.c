@@ -139,7 +139,6 @@ canvas *canvas_frompng(const char *filename)
 void canvas_topng(canvas *in, const char *filename)
 {
     stbi_write_png(filename, in->sizex, in->sizey, 4, in->data, 4*in->sizex);
-
 }
 
 canvas *canvas_enlighten(canvas *in, float param)
