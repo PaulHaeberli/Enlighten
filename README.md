@@ -17,7 +17,7 @@ This image processing method is related to Homomorphic Image Processing but avoi
 
 [faadooengineers link](http://www.faadooengineers.com/online-study/post/ece/digital-image-processing/1123/homomorphic-filtering)
 
-This method is used in my photo painting app for iOS called "PhotoViva"
+This method is used in my photo painting app for iOS called "[PhotoViva](https://apps.apple.com/us/app/photoviva-paintings-from-your-photos/id459007515)"
 
 The image blurring is implemented by resizing an image to a small size and then resizing it big again.
 
