@@ -112,7 +112,7 @@ canvas *canvas_resize(canvas *in, int sizex, int sizey)
 {
     canvas *out = canvas_new(sizex, sizey);
     stbir_resize_uint8((unsigned char *) in->data,  in->sizex,  in->sizey, 0,
-		       (unsigned char *)out->data, out->sizex, out->sizey, 0, 4);
+                       (unsigned char *)out->data, out->sizex, out->sizey, 0, 4);
     return out;
 }
 
@@ -158,8 +158,8 @@ canvas *canvas_enlighten(canvas *in, float param)
 int main(int argc, char **argv) 
 { 
     if(argc<4) {
-	fprintf(stderr, "usage: enlighten in.png out.png param\n");
-	exit(1);
+        fprintf(stderr, "usage: enlighten in.png out.png param\n");
+        exit(1);
     }
     float param = atof(argv[3]);
     canvas *in = canvas_frompng(argv[1]);
