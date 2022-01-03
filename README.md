@@ -1,9 +1,9 @@
 # Enlighten
 Automatically brighten dark areas in high dynamic range images
 
-![Tux, the Linux mascot](https://github.com/PaulHaeberli/Enlighten/blob/main/SampleImage.png)
-
 This code shows how to automatically brighten the darker areas of high dynamic range images.
+
+![Tux, the Linux mascot](https://github.com/PaulHaeberli/Enlighten/blob/main/SampleImage.png)
 
 To compile (only tested on macOS) just type 
 
