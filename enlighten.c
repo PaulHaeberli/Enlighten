@@ -152,7 +152,7 @@ canvas *canvas_enlighten(canvas *in, float param)
     // make a b/w image that has max of [r, g, b] of the input
     canvas *maxrgb = canvas_maxrgb(in);
 
-    // blur this image. can do more or less
+    // blur this image. can do more or less - try 10.0 try 40.0 up to you
     canvas *maxrgbblur = canvas_blur(maxrgb, 20.0);
     canvas_free(maxrgb);
 
