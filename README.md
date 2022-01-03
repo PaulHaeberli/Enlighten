@@ -13,9 +13,9 @@ To test it
 
 This image processing method is related to Homomorphic Image Processing but avoids the use of log space processing.
 
-[Homomorphic Filtering - wikipedia](https://en.wikipedia.org/wiki/Homomorphic_filtering#Image_enhancement)
+&nbsp;&nbsp;&nbsp;&nbsp;[Homomorphic Filtering - wikipedia](https://en.wikipedia.org/wiki/Homomorphic_filtering#Image_enhancement)
 
-[Homomorphic Filtering - faadooengineers](http://www.faadooengineers.com/online-study/post/ece/digital-image-processing/1123/homomorphic-filtering)
+&nbsp;&nbsp;&nbsp;&nbsp;[Homomorphic Filtering - faadooengineers](http://www.faadooengineers.com/online-study/post/ece/digital-image-processing/1123/homomorphic-filtering)
 
 This method is used in my photo painting app for iOS called "[PhotoViva](https://apps.apple.com/us/app/photoviva-paintings-from-your-photos/id459007515)"
 
