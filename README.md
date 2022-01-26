@@ -25,5 +25,5 @@ The image blurring is implemented by resizing an image to a small size and then 
 
 Enlighten sees images like your eyes see the world.
 
-Creditis: Uses https://github.com/nothings/stb to read, write and resize images.
+Credits: Uses https://github.com/nothings/stb to read, write and resize images.
 
