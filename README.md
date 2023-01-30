@@ -23,6 +23,8 @@ This method is used in my photo painting app for iOS called "[PhotoViva](https:/
 
 The image blurring is implemented by resizing an image to a small size and then resizing it big again.
 
+This process can be implemented in OpenGL using shaders to automatically correct rendered images in real-time.
+
 Enlighten sees images like your eyes see the world.
 
 Credits: Uses https://github.com/nothings/stb to read, write and resize images.
