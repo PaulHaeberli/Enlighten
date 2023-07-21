@@ -1,5 +1,5 @@
 all: enlighten.c
-	cc enlighten.c -o enlighten
+	gcc enlighten.c -o enlighten -lm
 
 test: enlighten
 	./enlighten Marigold.png MarigoldBright.png 0.6
